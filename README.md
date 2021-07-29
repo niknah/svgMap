@@ -110,6 +110,10 @@ You can pass the following options into svgMap:
 
   * `thresholdMin` (`number`) Minimum value to use for coloring calculations
 
+  * `touchLink` (`boolean`) On a mobile, whether touching will follow the `link` or show the tooltip info.
+
+  * `onGetTooltip` (`function(tooltip, countryID, countryValues)`)  Calls this function when a tooltip is made.  Return a html element or null to show the default tooltip.
+
   * `applyData` (`string`) The ID (key) of the data that will be used for coloring
 
   * `values` (`object`) An object with the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code as key and the chart data for each country as value
